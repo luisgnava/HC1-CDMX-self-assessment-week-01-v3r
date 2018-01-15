@@ -48,8 +48,10 @@ MDN
 
 return newTree;
   };
-    var treeMethods =
+    var treeMethods = {};
   //from that parent node, two different nodes will branch out
+  var tree = Tree('A');
+  treeMethods.addChild = function(value) {
   tree.addChild('A');
   tree.addChild('B');
   tree.addChild('C');
@@ -62,7 +64,8 @@ return newTree;
   tree.children[2](.addChild('J'));
   tree.children[2](.addChild('K'));
   tree.children[2](.addChild('L'));
+};
   //both node 1 and 2 will take three diferent nodes (3, 4, 5, 6, 7, 8)
 var newTree = tree.map(function (value)) {
   return value++;
-}
+};
