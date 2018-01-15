@@ -35,3 +35,17 @@ MDN
   *  newTree.children[1].children[1].value // 14
   *  root1.value // still 1
   */
+
+
+//create a parent node that takes a value
+  var node = new Node(0);
+  //from that parent node, two differen nodes will branch out
+  var branch1 = node.addChild(1);
+  var branch2 = node.addChild(2);
+  //both node 1 and 2 will take three diferent nodes (3, 4, 5, 6, 7, 8)
+  var branch3 = branch1.addChild(3);
+  var branch4 = branch1.addChild(4);
+  var branch5 = branch1.addChild(5);
+  var branch6 = branch2.addChild(6);
+  var branch7 = branch2.addChild(7);
+  var branch8 = branch2.addChild(8);
