@@ -38,10 +38,14 @@ MDN
 
 //create a tree function
 //create a parent node that takes a value
-  var tree = function() {
+  var tree = function(value) {
     var newTree = {};
+
+    _.extend(newTree, treeMethods);
+
     newTree.value = value;
     newTree.children = [];
+
 return newTree;
   };
     var treeMethods =
@@ -59,3 +63,6 @@ return newTree;
   tree.children[2](.addChild('K'));
   tree.children[2](.addChild('L'));
   //both node 1 and 2 will take three diferent nodes (3, 4, 5, 6, 7, 8)
+var newTree = tree.map(function (value)) {
+  return value++;
+}
