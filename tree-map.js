@@ -55,15 +55,15 @@ return newTree;
   tree.addChild('A');
   tree.addChild('B');
   tree.addChild('C');
-  tree.children[0](.addChild('D'));
-  tree.children[0](.addChild('E'));
-  tree.children[0](.addChild('F'));
-  tree.children[1](.addChild('G'));
-  tree.children[1](.addChild('H'));
-  tree.children[1](.addChild('I'));
-  tree.children[2](.addChild('J'));
-  tree.children[2](.addChild('K'));
-  tree.children[2](.addChild('L'));
+  tree.children[0].addChild('D');
+  tree.children[0].addChild('E');
+  tree.children[0].addChild('F');
+  tree.children[1].addChild('G');
+  tree.children[1].addChild('H');
+  tree.children[1].addChild('I');
+  tree.children[2].addChild('J');
+  tree.children[2].addChild('K');
+  tree.children[2].addChild('L');
 };
   //both node 1 and 2 will take three diferent nodes (3, 4, 5, 6, 7, 8)
 var newTree = tree.map(function (value)) {
